@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .wrapper {
+            width: 1500px;
+            display: flex;
+
+        }
+
+        @media (max-width:764px) {
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav {
+                width: 100%;
+                height: 48px;
+                background-color: brown;
+
+            }
+
+            .logo {
+                width: 40%;
+                height: 48px;
+                /* background-color: wheat; */
+                display: flex;
+                float: left;
+                align-items: center;
+
+                flex-wrap: nowrap;
+                flex-direction: row;
+            }
+
+            #menu {
+                background-color: transparent;
+                color: azure;
+                border: 0;
+            }
+
+            .sk-cooffee {
+                font-size: 19px;
+                color: aliceblue;
+                font-family: fantasy;
+            }
+
+            .empty {
+                width: 20%;
+                height: 48px;
+                /* background-color: aquamarine; */
+                float: left;
+            }
+
+            .icon {
+                width: 40%;
+                height: 48px;
+                /* background-color: blue; */
+                display: flex;
+                float: left;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .mick {
+                width: 25%;
+                height: 45px;
+            }
+
+            main {
+                width: 100%;
+                height: 1720px;
+
+            }
+
+            .section-A {
+                width: 100%;
+                height: 220px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-size: cover;
+                background-image: url('https://st.depositphotos.com/2632165/3143/i/450/depositphotos_31438577-stock-photo-coffee.jpg');
+
+            }
+
+
+            .welcome {
+                font-size: 25px;
+                color: aliceblue;
+                font-family: system-ui;
+                font-weight: 700;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(74, 74, 74);
+            }
+
+            .Freshly {
+                font-size: 12.9px;
+                color: aliceblue;
+
+
+                font-family: system-ui;
+                font-weight: 600;
+
+            }
+
+            .button {
+                background-color: transparent;
+                color: aliceblue;
+                border: 2px solid white;
+                font-size: 15px;
+                width: 150px;
+                height: 30px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(255, 255, 255);
+            }
+
+            .section-B {
+                width: 100%;
+                height: 420px;
+                background-color: aqua;
+
+
+
+            }
+
+
+
+
+            .first {
+                width: 100%;
+                height: 100px;
+                background-color: antiquewhite;
+
+            }
+
+            .jasty {
+                width: 15px;
+                font-family: 'greatvibes';
+                color: #c11515;
+
+            }
+
+            @font-face {
+                font-family: 'greatvibes';
+                src: url("./assets/GreatVibes-Regular.ttf");
+            }
+
+            .second {
+
+                display: flex;
+                overflow-x: scroll;
+
+            }
+
+            .second::-webkit-scrollbar{
+                
+                display: none;
+            }
+
+            .box1 {
+                width: 260px;
+                height: 300px;
+                background-color: #ffffff;
+                margin: 10px 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .box1-image {
+                background-size: cover;
+                height: 160px;
+                width: 90%;
+            }
+
+            .box1>h2 {
+                color: black;
+                font-size: 17px;
+                font-weight: 700;
+            }
+
+            .box1>p {
+                font-size: 13px;
+                color: #767676;
+            }
+
+            .box1>button {
+                background-color: #c11515;
+                color: aliceblue;
+                font-weight: 600;
+            }
+
+
+            footer {
+                width: 100%;
+                height: 610px;
+                background-color: black;
+            }
+
+            .top {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .center {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 5px;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+
+
+            }
+
+            .bottom {
+                width: 100%;
+                height: 180px;
+
+
+            }
+
+            .footertexth1 {
+
+                color: aliceblue;
+
+
+
+            }
+
+            .line {
+                width: 45px;
+                height: 3px;
+                background-color: #a41931;
+            }
+
+            .lorem-font>p {
+                font-size: 14px;
+                color: white;
+                text-align: center;
+            }
+
+            .lorem-font {
+
+                width: 250px;
+                height: 80px;
+            }
+
+            .btn-footer {
+                margin: 0px;
+                color: white;
+                width: 80px;
+                height: 25px;
+                background-color: #a41931;
+                border-radius: 0;
+                FONT-SIZE: 10px;
+                padding: 3px;
+            }
+
+            .location {
+                padding: 0;
+                display: flex;
+                color: aliceblue;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .contact {
+
+                padding: 0;
+                display: flex;
+                color: aliceblue;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+
+            .e-mail {
+
+                padding: 0;
+                display: flex;
+                color: aliceblue;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .hr {
+
+                width: 100%;
+                height: 9px;
+                color: aliceblue;
+
+
+            }
+
+            .offcanvas-body>li{
+
+                list-style: none;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+
+
+                <button id="menu" class="btn btn-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span
+                        class="material-symbols-outlined">
+                        menu
+                    </span></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">youtube</h5>
+                        <hr><hr>
+                    
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+                    <div class="offcanvas-body">
+                        <hr><hr>
+                        <li>HOME</li>
+                        <hr>
+                        <li>ABOUT US</li>
+                        <hr>
+                        <li>MENU</li>
+                        <hr>
+                        <li>RESERVATIONS</li>
+                        <hr>
+                        <li>GALLERY</li>
+                        <hr>
+                        <li>CONTACT</li>
+                        <hr>
+                        <li>PAGE</li>
+                        <hr>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+                <h2 class="sk-cooffee">SK COFFEE</h2>
+
+            </div>
+            <div class="empty"></div>
+            <div class="icon">
+                <svg class="mick" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#F3F3F3">
+                    <path
+                        d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z" />
+                </svg>
+                <svg class="mick" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#F3F3F3">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+                <svg class="mick" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#F3F3F3">
+                    <path
+                        d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="section-A">
+           <img src="./assets/css/image/f6d96a8f23bd2ffddb243907ad2d2660.png" alt="coffee">
+            <h2 class="welcome">WELCOME TO SK COFFEE</h2>
+            <p class="Freshly">Freshly Prepared,Good Coffee And Food Specialities.</p>
+            <button class="button">DISCOVER STORY</button>
+        </div>
+        <div class="section-B">
+            <div class="first">
+                <h2 class="jasty">Jasty cakes</h2>
+            </div>
+            <div class="second">
+                <div class="wrapper">
+                    <div class="box1">
+                        <img src="https://image.ceneostatic.pl/data/products/130309199/p-agmart-fototapeta-kuchenna-kawa-ziarna-ciasto-200x130.jpg"
+                            alt="" class="box1-image">
+
+                        <h2>New Cooking Recipes</h2>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. cum adipisci? Rerum ipsam quas
+                            animi.</p>
+                        <button>DISCOVER MORE</button>
+                    </div>
+                    <div class="box1">
+                        <img src="https://w0.peakpx.com/wallpaper/120/799/HD-wallpaper-french-breakfast-cafe-food-french-breakfast-two-coffee-coffee-time-hot-drink-croissant-white-cups-thumbnail.jpg"
+                            alt="" class="box1-image">
+
+                        <h2>Oldest Londen Pub</h2>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. cum adipisci? Rerum ipsam quas
+                            animi.</p>
+                        <button>DISCOVER MORE</button>
+                    </div>
+                    <div class="box1">
+                        <div class="box1">
+                            <img src="https://static.toiimg.com/thumb/msid-55615337,width-550,height-433/55615337.jpg"
+                                alt="" class="box1-image">
+
+                            <h2>Brownies and Coffee</h2>
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. cum adipisci? Rerum ipsam quas
+                                animi.</p>
+                            <button>DISCOVER MORE</button>
+                        </div>
+                        <!-- <div class="box1"></div>
+                    <div class="box1"></div>
+                    <div class="box1"></div>
+                    <div class="box1"></div>
+                    <div class="box1"></div>
+                    <div class="box1"></div> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="top">
+            <div>
+                <h1 class="footertexth1">ABOUT US</h1>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="lorem-font">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil tempora doloribus, aperiam
+                    exercitationem numquam repudiandae rerum.</p>
+            </div>
+
+            <div>
+                <button class="btn-footer">OUR STORY</button>
+            </div>
+
+        </div>
+
+        <div class="center">
+
+            <div>
+                <h1 class="footertexth1">CONTACT DETAILS</h1>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="lorem-font">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil tempora.</p>
+            </div>
+
+            <div>
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                    <p>AMRELI</p>
+                </div>
+                <div class="contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <p>+44 123 456 789</p>
+                </div>
+                <div class="e-mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                    <p>xyz434@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="bottom">
+            <div>
+                <hr class="hr">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
